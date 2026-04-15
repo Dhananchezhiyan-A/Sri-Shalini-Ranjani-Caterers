@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Shalini Ranjani Caterers</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-lotus">
+        <i class="fa-solid fa-spa"></i>
+      </div>
+      <div class="preloader-text">Sri Shalini Ranjani Caterers</div>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+    <!-- ===== PHONE FLOATING BUTTON ===== -->
+  <a href="tel:+918220627183" class="phone-float" aria-label="Call Now">
+    <i class="fa-solid fa-phone"></i>
+  </a>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Sri Shalini Ranjani</span>
+          <span class="logo-sub">Caterers</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Book Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <!-- Decorative floating elements -->
+    <div class="hero-particle p1"><i class="fa-solid fa-star"></i></div>
+    <div class="hero-particle p2"><i class="fa-solid fa-spa"></i></div>
+    <div class="hero-particle p3"><i class="fa-solid fa-star"></i></div>
+    <div class="hero-particle p4"><i class="fa-solid fa-seedling"></i></div>
+
+    <div class="hero-content">
+      <p class="hero-pre-title">Welcome to</p>
+      <h1 class="hero-title">
+        <span class="hero-title-line1">Sri Shalini Ranjani</span>
+        <span class="hero-title-line2">Caterers</span>
+      </h1>
+      <div class="hero-divider"><span></span><i class="fa-solid fa-spa"></i><span></span></div>
+      <p class="hero-tagline">Crafting Unforgettable Feasts for Life's Most Precious Moments</p>
+      <p class="hero-sub">Traditional South Indian flavors · Premium Ingredients · Impeccable Service</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn btn-outline">Book an Event</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to discover</span>
+      <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about">
+    <div class="section-bg-pattern"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main reveal-left">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80" alt="Traditional South Indian feast" loading="lazy" />
+            <div class="img-badge"><span>25+</span><small>Years of Excellence</small></div>
+          </div>
+          <div class="about-img-secondary reveal-left" data-delay="0.2">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Chef preparing food" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">A Legacy of <em>Flavour & Love</em></h2>
+          <div class="gold-divider"></div>
+          <p class="about-text">
+            Founded in 1999, Sri Shalini Ranjani Caterers has been the most trusted name in traditional South Indian catering across Chennai and Tamil Nadu. What began as a small family kitchen has blossomed into a full-service catering operation serving thousands of guests each year.
+          </p>
+          <p class="about-text">
+            We believe every meal is a celebration. Our team of experienced chefs uses authentic recipes passed down through generations, combined with the freshest ingredients sourced daily from local markets. From intimate family gatherings to grand weddings of 2000+ guests, we bring the same passion and precision to every plate.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="25">0</span><span>+</span>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5000">0</span><span>+</span>
+              <p>Events Served</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="200">0</span><span>+</span>
+              <p>Menu Items</p>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title">Our <em>Services</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">From intimate ceremonies to grand celebrations, we cater every occasion with grace and authenticity.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Wedding -->
+        <div class="service-card reveal-up" data-delay="0.1">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&q=80" alt="Wedding Catering" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Wedding Catering</h3>
+            <p>Traditional Muhurtham breakfasts, grand reception dinners, and everything in-between. We handle every detail so your special day is truly magical.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Customized wedding menus</li>
+              <li><i class="fa-solid fa-check"></i> Banana leaf spreads</li>
+              <li><i class="fa-solid fa-check"></i> Live counter stations</li>
+              <li><i class="fa-solid fa-check"></i> Up to 5000 guests</li>
+            </ul>
+            <a href="#contact" class="service-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Corporate -->
+        <div class="service-card reveal-up" data-delay="0.2">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=500&q=80" alt="Corporate Events" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Corporate Events</h3>
+            <p>Professional catering for conferences, office lunches, product launches, and corporate celebrations with punctual delivery and elegant presentation.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Breakfast & lunch boxes</li>
+              <li><i class="fa-solid fa-check"></i> Buffet setups</li>
+              <li><i class="fa-solid fa-check"></i> Hygiene certified team</li>
+              <li><i class="fa-solid fa-check"></i> On-time guarantee</li>
+            </ul>
+            <a href="#contact" class="service-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Birthday -->
+        <div class="service-card reveal-up" data-delay="0.3">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-cake-candles"></i>
+          </div>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Birthday Parties" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Birthday & Parties</h3>
+            <p>Make every birthday, baby shower, housewarming, or private party a delicious memory with our fun, vibrant, and flavourful spreads.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Customized spreads</li>
+              <li><i class="fa-solid fa-check"></i> Themed setups</li>
+              <li><i class="fa-solid fa-check"></i> Snack & dessert counters</li>
+              <li><i class="fa-solid fa-check"></i> Home delivery available</li>
+            </ul>
+            <a href="#contact" class="service-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Temple & Religious -->
+        <div class="service-card reveal-up" data-delay="0.4">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-om"></i>
+          </div>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&q=80" alt="Religious Events" loading="lazy" />
+          </div>
+          <div class="service-body">
+            <h3>Religious & Cultural</h3>
+            <p>Authentic Prasadam preparations, Annadanam services, and cultural event catering with strict adherence to traditional methods and purity standards.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Pure sattvic cooking</li>
+              <li><i class="fa-solid fa-check"></i> Annadanam service</li>
+              <li><i class="fa-solid fa-check"></i> Temple event catering</li>
+              <li><i class="fa-solid fa-check"></i> No onion/garlic option</li>
+            </ul>
+            <a href="#contact" class="service-link">Enquire Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="section menu-section">
+    <div class="menu-bg-overlay"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Taste the Tradition</p>
+        <h2 class="section-title">Our <em>Signature Menu</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">A curated selection from our extensive vegetarian menu — all prepared fresh on the day of your event.</p>
+      </div>
+
+      <!-- Menu Filter Tabs -->
+      <div class="menu-tabs reveal-up">
+        <button class="menu-tab active" data-category="all">All Items</button>
+        <button class="menu-tab" data-category="rice">Rice & Biriyani</button>
+        <button class="menu-tab" data-category="tiffin">Tiffin Items</button>
+        <button class="menu-tab" data-category="sweets">Sweets</button>
+        <button class="menu-tab" data-category="snacks">Snacks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <div class="menu-card" data-category="rice">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" alt="Lemon Rice" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Lemon Rice</h4>
+            <p>Tangy, aromatic rice tempered with mustard, curry leaves, and fresh lemon juice</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="rice">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80" alt="Curd Rice" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Curd Rice</h4>
+            <p>Creamy, soothing curd rice garnished with pomegranate and fried cashews</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="tiffin">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&q=80" alt="Masala Dosa" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Masala Dosa</h4>
+            <p>Crispy golden dosa stuffed with spiced potato masala, served with chutneys & sambar</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="tiffin">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80" alt="Idli Sambar" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Idli & Sambar</h4>
+            <p>Soft, fluffy steamed idlis paired with aromatic vegetable sambar and coconut chutney</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" alt="Kesari" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Rava Kesari</h4>
+            <p>Saffron-infused semolina halwa garnished with cashews, raisins, and cardamom</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80" alt="Gulab Jamun" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Gulab Jamun</h4>
+            <p>Soft milk-solid dumplings soaked in rose-flavoured sugar syrup, served warm</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80" alt="Samosa" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Crispy Samosa</h4>
+            <p>Golden fried pastry filled with spiced potatoes and peas, served with mint chutney</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=400&q=80" alt="Vadai" loading="lazy" />
+            <span class="menu-veg-badge"><i class="fa-solid fa-circle"></i></span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Medu Vadai</h4>
+            <p>Crispy lentil doughnuts seasoned with green chilli, ginger and curry leaves</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-cta reveal-up">
+        <p>We offer 200+ menu items. Request our full menu brochure.</p>
+        <a href="#contact" class="btn btn-primary">Request Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">A Visual Feast</p>
+        <h2 class="section-title">Our <em>Gallery</em></h2>
+        <div class="gold-divider center"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large reveal-up" data-delay="0.0">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Grand feast spread" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Grand Wedding Feast</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.1">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" alt="South Indian thali" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Traditional Thali</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.15">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80" alt="Dessert spread" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Dessert Counter</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.2">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Food platters" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Snack Platters</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.25">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80" alt="Breakfast spread" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Breakfast Spread</span></div>
+        </div>
+        <div class="gallery-item tall reveal-up" data-delay="0.3">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Event catering" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Live Cooking Station</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.35">
+          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=400&q=80" alt="Fresh ingredients" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i><span>Fresh & Natural</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="" id="lightboxImg" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="testimonials-bg"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Happy Families</p>
+        <h2 class="section-title">What Our <em>Guests Say</em></h2>
+        <div class="gold-divider center"></div>
+      </div>
+
+      <div class="testimonials-slider reveal-up">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">Sri Shalini Ranjani Caterers made our daughter's wedding absolutely unforgettable. The banana leaf spread was authentic, aromatic, and exquisite. Every guest kept praising the food!</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div>
+                <strong>Rajesh Krishnamurthy</strong>
+                <span>Wedding, January 2024 · Chennai</span>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">We hired them for our company's annual day lunch for 500 employees. The food was delivered hot and on time. The variety was incredible and everyone loved it. Highly recommended!</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PM</div>
+              <div>
+                <strong>Priya Maheshwari</strong>
+                <span>Corporate Event · Coimbatore</span>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">Their Annadanam service at our temple event was exceptional. Pure, sathvik cooking done with devotion. The prasadam was divine. We will definitely use their services again.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">VS</div>
+              <div>
+                <strong>Venkatesh Subramanian</strong>
+                <span>Temple Event · Madurai</span>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">Ordered catering for my son's birthday party of 200 guests. The live chaat counter and dessert station were a huge hit. Even the kids were obsessed with the food!</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LN</div>
+              <div>
+                <strong>Lavanya Narayanan</strong>
+                <span>Birthday Party · Trichy</span>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Let's Create Together</p>
+        <h2 class="section-title">Book Your <em>Event</em></h2>
+        <div class="gold-divider center"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal-left">
+          <h3>Get In Touch</h3>
+          <p>Ready to make your event extraordinary? Reach out to us and let's plan something unforgettable.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Our Office</strong>
+                <span>42, Anna Nagar East, Chennai – 600 102, Tamil Nadu</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Call Us</strong>
+                <span><a href="tel:+919876543210">+91 98765 43210</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email Us</strong>
+                <span><a href="mailto:info@ssrcaterers.com">info@ssrcaterers.com</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <strong>Working Hours</strong>
+                <span>Mon–Sat: 9 AM – 8 PM · Sun: 10 AM – 5 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal-right">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+                <span class="form-error" id="phoneError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eventType">Event Type *</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="">Select Event Type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="religious">Religious / Cultural</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error" id="eventTypeError"></span>
+              </div>
+              <div class="form-group">
+                <label for="guestCount">Guest Count *</label>
+                <input type="number" id="guestCount" name="guestCount" placeholder="Approx. number of guests" min="1" required />
+                <span class="form-error" id="guestCountError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="eventDate">Event Date</label>
+              <input type="date" id="eventDate" name="eventDate" />
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us more about your event, special requirements, dietary needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Enquiry</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Thank you! We've received your enquiry and will get back to you within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fa-solid fa-utensils"></i>
+            <div>
+              <span>Sri Shalini Ranjani</span>
+              <small>Caterers</small>
+            </div>
+          </div>
+          <p>Serving authentic South Indian flavours with love, tradition, and excellence since 1999.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Wedding Catering</a></li>
+            <li><a href="#services">Corporate Events</a></li>
+            <li><a href="#services">Birthday Parties</a></li>
+            <li><a href="#services">Religious Events</a></li>
+            <li><a href="#services">Annadanam</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Contact</h4>
+          <address>
+            <p><i class="fa-solid fa-location-dot"></i> 42, Anna Nagar East,<br>Chennai – 600 102</p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@ssrcaterers.com">info@ssrcaterers.com</a></p>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Sri Shalini Ranjani Caterers. All Rights Reserved.</p>
+      <p>Crafted with Dhanaa <i class="fa-solid fa-heart" style="color:#2ce07d"></i> in Chennai</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
