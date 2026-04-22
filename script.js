@@ -453,7 +453,6 @@ function validateField(fieldId) {
     });
   }
 });
-
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -461,7 +460,6 @@ contactForm.addEventListener('submit', (e) => {
   const valid = fields.map(validateField).every(Boolean);
 
   if (!valid) {
-    // Shake animation on first error
     const firstError = contactForm.querySelector('.error');
     if (firstError) {
       gsap.to(firstError, {
@@ -474,7 +472,7 @@ contactForm.addEventListener('submit', (e) => {
     return;
   }
 
-  // Simulate form submission
+  // UI elements
   const submitBtn = document.getElementById('submitBtn');
   const btnText = submitBtn.querySelector('.btn-text');
   const successMsg = document.getElementById('formSuccess');
@@ -484,7 +482,18 @@ contactForm.addEventListener('submit', (e) => {
 
   gsap.to(submitBtn, { scale: 0.97, duration: 0.2 });
 
-  setTimeout(() => {
+  // 👉 SEND EMAIL USING EMAILJS
+  emailjs.send("service_hgsi66i", "template_gy7xr27", {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    eventType: document.getElementById("eventType").value,
+    guestCount: document.getElementById("guestCount").value,
+    message: document.getElementById("message").value
+  })
+  .then(() => {
+
+    // SUCCESS UI
     gsap.to(submitBtn, {
       opacity: 0, y: 10, duration: 0.3,
       onComplete: () => { submitBtn.style.display = 'none'; }
@@ -497,7 +506,14 @@ contactForm.addEventListener('submit', (e) => {
     );
 
     contactForm.reset();
-  }, 1500);
+
+  })
+  .catch(() => {
+    // ERROR UI
+    alert("❌ Failed to send enquiry. Please try again.");
+    submitBtn.disabled = false;
+    btnText.textContent = 'Send Enquiry';
+  });
 });
 
 /* =============================================
